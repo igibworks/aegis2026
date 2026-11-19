@@ -1,5 +1,6 @@
 // EDIT THIS FILE to update the programme. The website builds the schedule from it.
-// Source: "AEGIS 2026 Meeting Programme" (official).
+// Source: "AEGIS 2026 Public Schedule" (official).
+// A trailing * on a name = subject to MEA approval (see MEETING.footnote).
 //
 // Each day has "items". An item is either:
 //   { kind: "row", time, title, desc?, type?: "break" }                      -> a simple timed row
@@ -8,18 +9,19 @@
 
 window.MEETING = {
   subtitle: "Integrative Approaches in One Health, AMR and Wellness using Omics",
-  venue: "CSIR-Institute of Genomics and Integrative Biology (IGIB), New Delhi"
+  venue: "CSIR-Institute of Genomics and Integrative Biology (IGIB), New Delhi",
+  footnote: "* Subject to MEA approval (international delegates)."
 };
 
 window.OVERVIEW = [
   { n: 1, theme: "One Health and AMR: Tracking Resistance across Hosts, Microbiomes and Environments",
-    speakers: "U. R. Dahle, M. Al-Haroni, B. Taneja", chair: "Dr. Sharmila Mande, Prof. Fernanda Cristina Petersen" },
+    speakers: "U. R. Dahle*, M. Al-Haroni*, B. Taneja", chair: "Dr. Sharmila Mande, Prof. Fernanda Cristina Petersen*" },
   { n: 2, theme: "Microbial Communities in Action: Signalling, Biofilms and the Emergence of Resistance",
-    speakers: "S. Mande, F. C. Petersen, A. Dhariwal", chair: "Prof. Ulf Reidar Dahle, Prof. Belinda Nicolau" },
+    speakers: "S. Mande, F. C. Petersen*, A. Dhariwal*", chair: "Prof. Ulf Reidar Dahle*, Prof. Belinda Nicolau*" },
   { n: 3, theme: "Decoding Data in AMR: AI, Bioinformatics and Computational Genomics",
     speakers: "J. Narayan, K. Choudhary", chair: "Dr. Bhupesh Taneja, Dr. Sherry Bhalla" },
   { n: 4, theme: "Omics for Wellness: Host–Pathogen Interplay and Pathogen-Driven Disease",
-    speakers: "R. Pandey, B. Nicolau", chair: "Prof. Cínthia Tabchoury, Prof. Antonio Pedro Ricomini Filho" }
+    speakers: "R. Pandey, B. Nicolau*", chair: "Prof. Cínthia Tabchoury, Prof. Antonio Pedro Ricomini Filho*" }
 ];
 
 window.SCHEDULE = [
@@ -39,15 +41,15 @@ window.SCHEDULE = [
         kind: "session", label: "Session 1", time: "10:05 – 11:45 AM",
         title: "One Health and AMR: Tracking Resistance across Hosts, Microbiomes and Environments",
         focus: "How resistance emerges, evolves and moves between human, animal and environmental reservoirs, studied through comparative genomics, evolutionary biology, surveillance and resistome analysis.",
-        chair: "Dr. Sharmila Mande and Prof. Fernanda Cristina Petersen (University of Oslo, Norway)",
+        chair: "Dr. Sharmila Mande and Prof. Fernanda Cristina Petersen* (University of Oslo, Norway)",
         rows: [
-          { time: "10:05 – 10:30", slot: "Faculty Talk 1", speaker: "Prof. Ulf Reidar Dahle", affil: "Norwegian Institute of Public Health, Norway",
+          { time: "10:05 – 10:30", slot: "Faculty Talk 1", speaker: "Prof. Ulf Reidar Dahle*", affil: "Norwegian Institute of Public Health, Norway",
             talkTitle: "From Policy to Bench: Bridging Global AMR Frameworks with Clinical Reality and Microbiome Research" },
-          { time: "10:30 – 10:55", slot: "Faculty Talk 2", speaker: "Prof. Mohammed Al-Haroni", affil: "University of Oslo, Norway",
+          { time: "10:30 – 10:55", slot: "Faculty Talk 2", speaker: "Prof. Mohammed Al-Haroni*", affil: "University of Oslo, Norway",
             talkTitle: "Title to be confirmed" },
           { time: "10:55 – 11:20", slot: "Faculty Talk 3", speaker: "Dr. Bhupesh Taneja", affil: "CSIR-IGIB, New Delhi" },
-          { time: "11:20 – 11:30", slot: "Student Talk 1", speaker: "Student speaker (TBC)", affil: "JN Lab, CSIR-IGIB" },
-          { time: "11:30 – 11:40", slot: "Student Talk 2", speaker: "Student speaker (TBC)", affil: "BT Lab, CSIR-IGIB" },
+          { time: "11:20 – 11:30", slot: "Student Talk 1", speaker: "Narun Gambhir", affil: "BT Lab, CSIR-IGIB" },
+          { time: "11:30 – 11:40", slot: "Student Talk 2", speaker: "Anwesha De", affil: "JN Lab, CSIR-IGIB" },
           { time: "11:40 – 11:45", slot: "Session closure", speaker: "Session chairs", type: "panel" },
           { time: "11:45 – 12:00", slot: "TEA BREAK", type: "break" }
         ]
@@ -56,13 +58,13 @@ window.SCHEDULE = [
         kind: "session", label: "Session 2", time: "12:00 – 1:30 PM",
         title: "Microbial Communities in Action: Signalling, Biofilms and the Emergence of Resistance",
         focus: "How bacteria and fungi communicate, exchange genes and build biofilms, and how these community behaviours drive tolerance, persistence and resistance.",
-        chair: "Prof. Ulf Reidar Dahle (Norwegian Institute of Public Health, Norway) and Prof. Belinda Nicolau (McGill University, Canada)",
+        chair: "Prof. Ulf Reidar Dahle* (Norwegian Institute of Public Health, Norway) and Prof. Belinda Nicolau* (McGill University, Canada)",
         rows: [
           { time: "12:00 – 12:25", slot: "Faculty Talk 4", speaker: "Prof. Sharmila Mande", affil: "Ayush Distinguished Scientist Chair, Ministry of Ayush",
             talkTitle: "Nasopharyngeal and Gut microbiome in neonates" },
-          { time: "12:25 – 12:50", slot: "Faculty Talk 5", speaker: "Prof. Fernanda Cristina Petersen", affil: "University of Oslo, Norway",
+          { time: "12:25 – 12:50", slot: "Faculty Talk 5", speaker: "Prof. Fernanda Cristina Petersen*", affil: "University of Oslo, Norway",
             talkTitle: "Beyond the gut: Insights from the nasopharyngeal microbiome" },
-          { time: "12:50 – 1:15", slot: "Faculty Talk 6", speaker: "Dr. Achal Dhariwal", affil: "University of Oslo, Norway",
+          { time: "12:50 – 1:15", slot: "Faculty Talk 6", speaker: "Dr. Achal Dhariwal*", affil: "University of Oslo, Norway",
             talkTitle: "An Integrated Characterization of the Nasopharyngeal Resistome in Indian Preterm Infants: A Preliminary Comparison with Norway" },
           { time: "1:15 – 1:25", slot: "Student Talk 3", speaker: "Saraswati Awasthi", affil: "RS Lab, CSIR-IGIB" },
           { time: "1:25 – 1:30", slot: "Session closure", speaker: "Session chairs", type: "panel" },
@@ -77,8 +79,8 @@ window.SCHEDULE = [
         rows: [
           { time: "2:30 – 2:55", slot: "Faculty Talk 7", speaker: "Dr. Jitendra Narayan", affil: "CSIR-IGIB, New Delhi" },
           { time: "2:55 – 3:20", slot: "Faculty Talk 8", speaker: "Dr. Kumardeep Choudhary", affil: "CSIR-IGIB, New Delhi" },
-          { time: "3:20 – 3:30", slot: "Student Talk 4", speaker: "Student speaker (TBC)", affil: "JN Lab, CSIR-IGIB" },
-          { time: "3:30 – 3:40", slot: "Student Talk 5", speaker: "Student speaker (TBC)", affil: "BT Lab, CSIR-IGIB" },
+          { time: "3:20 – 3:30", slot: "Student Talk 4", speaker: "Mukul Verma", affil: "JN Lab, CSIR-IGIB" },
+          { time: "3:30 – 3:40", slot: "Student Talk 5", speaker: "Dhrumil Kumar Sisodiya", affil: "BT Lab, CSIR-IGIB" },
           { time: "3:40 – 3:50", slot: "Student Talk 6", speaker: "Sneha Thomas", affil: "Ajay Pratap Lab, CSIR-IGIB" },
           { time: "3:50 – 4:00", slot: "Session closure", speaker: "Session chairs", type: "panel" },
           { time: "4:00 – 4:15", slot: "TEA BREAK", type: "break" }
@@ -88,10 +90,10 @@ window.SCHEDULE = [
         kind: "session", label: "Session 4", time: "4:15 – 6:00 PM",
         title: "Omics for Wellness: Host–Pathogen Interplay and Pathogen-Driven Disease",
         focus: "Integrating host and microbial genomics and transcriptomics to understand infection outcomes, pathogen-driven disease across the life course, and approaches beyond conventional antibiotics.",
-        chair: "Prof. Cínthia Pereira Machado Tabchoury and Prof. Antonio Pedro Ricomini Filho (University of Campinas, Brazil)",
+        chair: "Prof. Cínthia Pereira Machado Tabchoury and Prof. Antonio Pedro Ricomini Filho* (University of Campinas, Brazil)",
         rows: [
           { time: "4:15 – 4:40", slot: "Faculty Talk 9", speaker: "Dr. Rajesh Pandey", affil: "CSIR-IGIB, New Delhi" },
-          { time: "4:40 – 5:05", slot: "Faculty Talk 10", speaker: "Prof. Belinda Nicolau", affil: "McGill University, Canada",
+          { time: "4:40 – 5:05", slot: "Faculty Talk 10", speaker: "Prof. Belinda Nicolau*", affil: "McGill University, Canada",
             talkTitle: "Reading Between the Clocks: Intra-individual Variability in Epigenetic Age Estimates" },
           { time: "5:05 – 5:15", slot: "Student Talk 7", speaker: "Harsimran Singh Kapoor (PhD Trainee)", affil: "Faculty of Dental Medicine & Oral Health Sciences, McGill University, Canada" },
           { time: "5:15 – 5:25", slot: "Student Talk 8", speaker: "Student speaker (TBC)", affil: "RP Lab, CSIR-IGIB" },
@@ -109,9 +111,9 @@ window.SCHEDULE = [
     items: [
       { kind: "row", time: "9:30 – 9:35", title: "Summary of Day 1" },
       { kind: "row", time: "9:35 – 10:00", title: "Talk: Beyond Killing Bacteria: Targeting Biofilm Architecture for Disease Control",
-        desc: "Prof. Antonio Pedro Ricomini Filho · Piracicaba Dental School, University of Campinas, Brazil" },
+        desc: "Prof. Antonio Pedro Ricomini Filho* · Piracicaba Dental School, University of Campinas, Brazil" },
       { kind: "row", time: "10:00 – 10:30", title: "★ Fireside Chat: Science Without Borders: Exchange, Collaboration and the Road Ahead",
-        desc: "Pernille on university collaboration and science exchange programmes, with Prof. Ulf Reidar Dahle, Prof. Fernanda Cristina Petersen and Prof. Sharmila Mande reflecting on the key takeaways of the meeting. Moderator: Dr. Rajesh Pandey" },
+        desc: "Pernille on university collaboration and science exchange programmes, with Prof. Ulf Reidar Dahle*, Prof. Fernanda Cristina Petersen* and Prof. Sharmila Mande reflecting on the key takeaways of the meeting. Moderator: Dr. Rajesh Pandey" },
       { kind: "row", time: "10:30 – 11:00", title: "★ Closing remarks and vote of thanks" },
       { kind: "row", time: "11:00 – 11:15", title: "Tea break", type: "break" },
       { kind: "row", time: "11:15 – 12:00", title: "Breakout Session 1", desc: "Internal Faculty Exchange · One Health and microbial communities: reservoirs, transmission and persistence (Sessions 1 & 2)" },

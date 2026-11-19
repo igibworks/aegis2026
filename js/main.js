@@ -46,7 +46,8 @@
       `<button class="tab ${i === day ? 'active' : ''}" role="tab" aria-selected="${i === day}" data-i="${i}">${esc(d.day)} · ${esc(d.date)}</button>`).join('');
     const d = S[day];
     tl.innerHTML = `<div class="day-head"><strong>${esc(d.day)} — ${esc(d.title)}</strong>${d.subtitle ? `<em>${esc(d.subtitle)}</em>` : ''}</div>` +
-      d.items.map(it => it.kind === 'session' ? renderSession(it) : renderRow(it)).join('');
+      d.items.map(it => it.kind === 'session' ? renderSession(it) : renderRow(it)).join('') +
+      (window.MEETING && window.MEETING.footnote ? `<p class="note" style="margin-top:16px">${esc(window.MEETING.footnote)}</p>` : '');
   }
 
   tabs.addEventListener('click', e => { const b = e.target.closest('.tab'); if (b) { day = +b.dataset.i; render(); } });
