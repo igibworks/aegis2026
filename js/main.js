@@ -10,7 +10,7 @@
     if (now.getFullYear() === 2026 && now.getMonth() === 10 && now.getDate() === d) day = i;
   });
 
-  function esc(s) { return String(s == null ? '' : s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c])); }
+  function esc(s) { return String(s == null ? '' : s).replace(/[&<>"]/g, c => ({ '&': '&', '<': '<', '>': '>', '"': '"' }[c])); }
 
   function renderRow(r) {
     return `<div class="slot ${r.type === 'break' ? 'break' : ''}">
@@ -24,7 +24,11 @@
       <div class="srow ${r.type || ''}">
         <div class="time">${esc(r.time)}</div>
         <div class="slotname">${esc(r.slot)}</div>
-        <div class="who">${r.speaker ? `<b>${esc(r.speaker)}</b>` : ''}${r.affil ? `<span>${esc(r.affil)}</span>` : ''}</div>
+        <div class="who">
+          ${r.speaker ? `<b>${esc(r.speaker)}</b>` : ''}
+          ${r.affil ? `<span>${esc(r.affil)}</span>` : ''}
+          ${r.talkTitle ? `<div class="talk-title">${esc(r.talkTitle)}</div>` : ''}
+        </div>
       </div>`).join('');
     return `<article class="session">
       <header>
