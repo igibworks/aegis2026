@@ -40,7 +40,7 @@ window.SCHEDULE = [
         focus: "How resistance emerges, evolves and moves between human, animal and environmental reservoirs, studied through comparative genomics, evolutionary biology, surveillance and resistome analysis.",
         chair: "Dr. Sharmila Mande and Dr. Achal Dhariwal (University of Oslo)",
         rows: [
-          { time: "9:45 – 10:10", slot: "Faculty Talk 1", speaker: "Prof. Ulf Reidar Dahle", affil: "Norwegian Institute of Public Health, Norway" },
+          { time: "9:45 – 10:10", slot: "Faculty Talk 1", speaker: "Prof. Ulf Reidar Dahle", affil: "Norwegian Institute of Public Health, Norway", talkTitle:"From Policy to Bench: Bridging Global AMR Frameworks with Clinical Reality and Microbiome Research" },
           { time: "10:10 – 10:35", slot: "Faculty Talk 2", speaker: "Prof. Mohammed Al-Haroni", affil: "University of Oslo, Norway" },
           { time: "10:35 – 10:45", slot: "Student Talk 1", speaker: "Student speaker (TBC)", affil: "JN Lab" },
           { time: "10:45 – 10:55", slot: "Student Talk 2", speaker: "Student speaker (TBC)", affil: "BT Lab" },
