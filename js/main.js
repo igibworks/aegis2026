@@ -27,7 +27,7 @@
         <div class="who">
           ${r.speaker ? `<b>${esc(r.speaker)}</b>` : ''}
           ${r.affil ? `<span>${esc(r.affil)}</span>` : ''}
-          ${r.talkTitle ? `<div class="talk-title">${esc(r.talkTitle)}</div>` : ''}
+          ${r.talkTitle ? `<div class="talk-title">${esc(r.talkTitle)}</div>` : ''} 
         </div>
       </div>`).join('');
     return `<article class="session">
