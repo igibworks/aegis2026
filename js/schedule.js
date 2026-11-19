@@ -1,10 +1,10 @@
 // EDIT THIS FILE to update the programme. The website builds the schedule from it.
-// Source: "Resisforce Satellite Meeting Programme" (official).
+// Source: "Resisforce Satellite Meeting Programme" (official, updated).
 //
 // Each day has "items". An item is either:
 //   { kind: "row", time, title, desc?, type?: "break" }                      -> a simple timed row
 //   { kind: "session", label, time, title, focus?, chair?, rows: [ ... ] }   -> a session block
-// Session rows: { time, slot, speaker?, affil?, type?: "break" | "panel" }
+// Session rows: { time, slot, speaker?, affil?, talkTitle?, type?: "break" | "panel" }
 
 window.MEETING = {
   subtitle: "Integrative Approaches in One Health, AMR and Wellness using Omics",
@@ -13,13 +13,13 @@ window.MEETING = {
 
 window.OVERVIEW = [
   { n: 1, theme: "One Health and AMR: Tracking Resistance across Hosts, Microbiomes and Environments",
-    speakers: "U. R. Dahle, M. Al-Haroni", chair: "Dr. Sharmila Mande, Dr. Achal Dhariwal" },
+    speakers: "U. R. Dahle, M. Al-Haroni, B. Taneja", chair: "Dr. Sharmila Mande, Dr. Achal Dhariwal" },
   { n: 2, theme: "Microbial Communities in Action: Signalling, Biofilms and the Emergence of Resistance",
-    speakers: "F. C. Petersen, A. P. Ricomini Filho", chair: "Prof. Cínthia Tabchoury, Dr. Bhupesh Taneja" },
+    speakers: "S. Mande, F. C. Petersen, A. P. Ricomini Filho", chair: "Prof. Ulf Reidar Dahle, Prof. Belinda Nicolau" },
   { n: 3, theme: "Decoding Data in AMR: AI, Bioinformatics and Computational Genomics",
-    speakers: "J. Narayan, B. Taneja", chair: "Prof. Sharmila Mande, Dr. Rajesh Pandey" },
+    speakers: "J. Narayan, K. Choudhary", chair: "Dr. Bhupesh Taneja, Dr. Sherry Bhalla" },
   { n: 4, theme: "Omics for Wellness: Host–Pathogen Interplay and Pathogen-Driven Disease",
-    speakers: "R. Pandey, B. Nicolau", chair: "Dr. Jitendra Narayan, Dr. Achal Dhariwal" }
+    speakers: "R. Pandey, B. Nicolau", chair: "Prof. Cínthia Tabchoury" }
 ];
 
 window.SCHEDULE = [
@@ -27,88 +27,77 @@ window.SCHEDULE = [
     day: "Day 1", date: "Tue, 24 Nov 2026", title: "Scientific Sessions",
     items: [
       {
-        kind: "session", label: "Opening Session", time: "9:30 – 9:45 AM", title: "Opening Session",
+        kind: "session", label: "Opening Session", time: "9:30 – 10:05 AM", title: "Opening Session",
         rows: [
-          { time: "9:30 – 9:35", slot: "Welcome remarks", speaker: "Director, CSIR-IGIB" },
-          { time: "9:35 – 9:42", slot: "Opening remarks", speaker: "Prof. Sharmila Mande" },
-          { time: "9:42 – 9:45", slot: "Introduction to the programme", speaker: " Dr. Rajesh Pandey " }
+          { time: "9:30 – 9:40", slot: "Welcome remarks", speaker: "Director, CSIR-IGIB" },
+          { time: "9:40 – 9:50", slot: "Opening address", speaker: "Prof. Sharmila Mande" },
+          { time: "9:50 – 9:55", slot: "Introduction to the programme", speaker: "Dr. Rajesh Pandey (Coordinator)" },
+          { time: "9:55 – 10:05", slot: "Group photo session" }
         ]
       },
       {
-        kind: "session", label: "Session 1", time: "9:45 – 11:00 AM",
+        kind: "session", label: "Session 1", time: "10:05 – 11:45 AM",
         title: "One Health and AMR: Tracking Resistance across Hosts, Microbiomes and Environments",
         focus: "How resistance emerges, evolves and moves between human, animal and environmental reservoirs, studied through comparative genomics, evolutionary biology, surveillance and resistome analysis.",
         chair: "Dr. Sharmila Mande and Dr. Achal Dhariwal (University of Oslo)",
         rows: [
-          { time: "10:00 – 10:25", slot: "Faculty Talk 1", speaker: "Prof. Ulf Reidar Dahle", affil: "Norwegian Institute of Public Health, Norway", 
-            talkTitle:"From Policy to Bench: Bridging Global AMR Frameworks with Clinical Reality and Microbiome Research" },
-          { time: "10:25 – 10:50", slot: "Faculty Talk 2", speaker: "Prof. Mohammed Al-Haroni", affil: "University of Oslo, Norway", 
-            talkTitle:"TBA" },
-          { time: "10:50 – 11:15", slot: "Faculty Talk 3", speaker: "Dr. Bhupesh Taneja", affil: "CSIR-IGIB, New Delhi", 
-            talkTitle:"TBA" },
-          { time: "11:15 – 11:25", slot: "Student Talk 1", speaker: "Student speaker (TBC)", affil: "JN Lab"},
-          { time: "11:25 – 11:35", slot: "Student Talk 2", speaker: "Student speaker (TBC)", affil: "BT Lab"},
-          { time: "11:35 – 11:40", slot: "Panel discussion", speaker: "Speakers of the session with the Chair", type: "panel" },
-          { time: "11:40 – 12:00", slot: "TEA BREAK", type: "break" }
+          { time: "10:05 – 10:30", slot: "Faculty Talk 1", speaker: "Prof. Ulf Reidar Dahle", affil: "Norwegian Institute of Public Health, Norway",
+            talkTitle: "From Policy to Bench: Bridging Global AMR Frameworks with Clinical Reality and Microbiome Research" },
+          { time: "10:30 – 10:55", slot: "Faculty Talk 2", speaker: "Prof. Mohammed Al-Haroni", affil: "University of Oslo, Norway",
+            talkTitle: "Title to be confirmed" },
+          { time: "10:55 – 11:20", slot: "Faculty Talk 3", speaker: "Dr. Bhupesh Taneja", affil: "CSIR-IGIB, New Delhi" },
+          { time: "11:20 – 11:30", slot: "Student Talk 1", speaker: "Student speaker (TBC)", affil: "JN Lab, CSIR-IGIB" },
+          { time: "11:30 – 11:40", slot: "Student Talk 2", speaker: "Student speaker (TBC)", affil: "BT Lab, CSIR-IGIB" },
+          { time: "11:40 – 11:45", slot: "Panel discussion", speaker: "Speakers of the session with the Chair", type: "panel" },
+          { time: "11:45 – 12:00", slot: "TEA BREAK", type: "break" }
         ]
       },
       {
-        kind: "session", label: "Session 2", time: "11:30 AM – 1:00 PM",
+        kind: "session", label: "Session 2", time: "12:00 – 1:30 PM",
         title: "Microbial Communities in Action: Signalling, Biofilms and the Emergence of Resistance",
         focus: "How bacteria and fungi communicate, exchange genes and build biofilms, and how these community behaviours drive tolerance, persistence and resistance.",
-        chair: "Prof. Cínthia Pereira Machado Tabchoury (University of Campinas, Brazil) and Dr. Bhupesh Taneja",
+        chair: "Prof. Ulf Reidar Dahle (Norwegian Institute of Public Health, Norway) and Prof. Belinda Nicolau (McGill University, Canada)",
         rows: [
-          { time: "12:00 – 12:25", slot: "Faculty Talk 4", speaker: "Dr. Sharmila Mande", affil: "Ayush Distinguished Scientist Chair, Ministry of Ayush",
-            talkTitle:"Nasopharyngeal and Gut microbiome in neonates"
-           },
-          { time: "12:00 – 12:25", slot: "Faculty Talk 5", speaker: "Prof. Fernanda Cristina Petersen", affil: "University of Oslo, Norway",
-            talkTitle:"Beyond the gut: Insights from the nasopharyngeal microbiome"
-           },
-          { time: "11:55 – 12:20", slot: "Faculty Talk 6", speaker: "Prof. Antonio Pedro Ricomini Filho", affil: "University of Campinas, Brazil",
-            talkTitle:"Beyond Killing Bacteria: Targeting Biofilm Architecture for Disease Control"
-          },
-          { time: "12:20 – 12:30", slot: "Student Talk 3", speaker: "Student speaker (TBC)", affil: "VR Lab"},
-          { time: "12:30 – 12:40", slot: "Student Talk 4", speaker: "Student speaker (TBC)", affil: "KC Lab"},
-          { time: "12:40 – 1:00", slot: "Panel discussion", speaker: "Speakers of the session with the Chair", type: "panel" },
-          { time: "1:00 – 2:00", slot: "LUNCH", type: "break" }
+          { time: "12:00 – 12:25", slot: "Faculty Talk 4", speaker: "Prof. Sharmila Mande", affil: "Ayush Distinguished Scientist Chair, Ministry of Ayush",
+            talkTitle: "Nasopharyngeal and Gut microbiome in neonates" },
+          { time: "12:25 – 12:50", slot: "Faculty Talk 5", speaker: "Prof. Fernanda Cristina Petersen", affil: "University of Oslo, Norway",
+            talkTitle: "Beyond the gut: Insights from the nasopharyngeal microbiome" },
+          { time: "12:50 – 1:15", slot: "Faculty Talk 6", speaker: "Prof. Antonio Pedro Ricomini Filho", affil: "University of Campinas, Brazil",
+            talkTitle: "Beyond Killing Bacteria: Targeting Biofilm Architecture for Disease Control" },
+          { time: "1:15 – 1:25", slot: "Student Talk 3", speaker: "Saraswati Awasthi", affil: "RS Lab, CSIR-IGIB" },
+          { time: "1:25 – 1:30", slot: "Panel discussion", speaker: "Speakers of the session with the Chair", type: "panel" },
+          { time: "1:30 – 2:30", slot: "LUNCH", type: "break" }
         ]
       },
       {
-        kind: "session", label: "Session 3", time: "2:00 – 3:30 PM",
+        kind: "session", label: "Session 3", time: "2:30 – 4:00 PM",
         title: "Decoding Data in AMR: AI, Bioinformatics and Computational Genomics",
         focus: "Turning sequence and structural data into biological insight: AI and machine-learning models to predict resistance, comparative and evolutionary genomics, genome informatics and the molecular architecture of resistance.",
-        chair: "Prof. Sharmila Mande (TCS; Visiting Professor, IISER Thiruvananthapuram) and Dr. Rajesh Pandey",
+        chair: "Dr. Bhupesh Taneja and Dr. Sherry Bhalla",
         rows: [
-          { time: "2:00 – 2:25", slot: "Faculty Talk 5", speaker: "Dr. Jitendra Narayan", affil: "CSIR-IGIB, New Delhi",
-            talkTitle:"TBA"
-           },
-          { time: "2:25 – 2:50", slot: "Faculty Talk 6", speaker: "Dr. Kumardeep Choudhary", affil: "CSIR-IGIB, New Delhi",
-            talkTitle:"TBA"
-           },
-          { time: "2:50 – 3:00", slot: "Student Talk 5", speaker: "Student speaker (TBC)", affil: "JN Lab"},
-          { time: "3:00 – 3:10", slot: "Student Talk 6", speaker: "Student speaker (TBC)", affil: "BT Lab"},
-          { time: "3:10 – 3:20", slot: "Student Talk 7", speaker: "Student speaker (TBC)", affil: "RS Lab"},
-          { time: "3:20 – 3:30", slot: "Panel discussion", speaker: "Speakers of the session with the Chair", type: "panel" },
-          { time: "3:30 – 4:00", slot: "TEA BREAK", type: "break" }
+          { time: "2:30 – 2:55", slot: "Faculty Talk 7", speaker: "Dr. Jitendra Narayan", affil: "CSIR-IGIB, New Delhi" },
+          { time: "2:55 – 3:20", slot: "Faculty Talk 8", speaker: "Dr. Kumardeep Choudhary", affil: "CSIR-IGIB, New Delhi" },
+          { time: "3:20 – 3:30", slot: "Student Talk 4", speaker: "Student speaker (TBC)", affil: "JN Lab, CSIR-IGIB" },
+          { time: "3:30 – 3:40", slot: "Student Talk 5", speaker: "Student speaker (TBC)", affil: "BT Lab, CSIR-IGIB" },
+          { time: "3:40 – 3:50", slot: "Student Talk 6", speaker: "Sneha Thomas", affil: "Ajay Pratap Lab, CSIR-IGIB" },
+          { time: "3:50 – 4:00", slot: "Panel discussion", speaker: "Speakers of the session with the Chair", type: "panel" },
+          { time: "4:00 – 4:15", slot: "TEA BREAK", type: "break" }
         ]
       },
       {
-        kind: "session", label: "Session 4", time: "4:00 – 5:30 PM",
+        kind: "session", label: "Session 4", time: "4:15 – 5:45 PM",
         title: "Omics for Wellness: Host–Pathogen Interplay and Pathogen-Driven Disease",
         focus: "Integrating host and microbial genomics and transcriptomics to understand infection outcomes, pathogen-driven disease across the life course, and approaches beyond conventional antibiotics.",
-        chair: "Dr. Jitendra Narayan and Dr. Achal Dhariwal (University of Oslo)",
+        chair: "Prof. Cínthia Pereira Machado Tabchoury (University of Campinas, Brazil)",
         rows: [
-          { time: "4:00 – 4:25", slot: "Faculty Talk 7", speaker: "Dr. Rajesh Pandey", affil: "CSIR-IGIB, New Delhi",
-            talkTitle:"TBA"
-           },
-          { time: "4:25 – 4:50", slot: "Faculty Talk 8", speaker: "Prof. Belinda Nicolau", affil: "McGill University, Canada",
-            talkTitle:"Reading Between the Clocks: Intra-individual Variability in Epigenetic Age Estimates"
-           },
-          { time: "4:50 – 5:00", slot: "Student Talk 8", speaker: "Student speaker (TBC)", affil: "RP Lab"},
-          { time: "5:00 – 5:10", slot: "Student Talk 9", speaker: "Student speaker (TBC)", affil: "RP Lab / DC Lab"},
-          { time: "5:10 – 5:20", slot: "Student Talk 10", speaker: "Amal (TBC)"},
-          { time: "5:20 – 5:30", slot: "Panel discussion", speaker: "Speakers of the session with the Chair", type: "panel" },
-          { time: "5:30 PM", slot: "CONCLUSION OF DAY 1", type: "break" }
+          { time: "4:15 – 4:40", slot: "Faculty Talk 9", speaker: "Dr. Rajesh Pandey", affil: "CSIR-IGIB, New Delhi" },
+          { time: "4:40 – 5:05", slot: "Faculty Talk 10", speaker: "Prof. Belinda Nicolau", affil: "McGill University, Canada",
+            talkTitle: "Reading Between the Clocks: Intra-individual Variability in Epigenetic Age Estimates" },
+          { time: "5:05 – 5:15", slot: "Student Talk 7", speaker: "Harsimran Singh Kapoor (PhD Trainee)", affil: "Faculty of Dental Medicine & Oral Health Sciences, McGill University, Canada" },
+          { time: "5:15 – 5:25", slot: "Student Talk 8", speaker: "Student speaker (TBC)", affil: "RP Lab, CSIR-IGIB" },
+          { time: "5:25 – 5:35", slot: "Student Talk 9", speaker: "Student speaker (TBC)", affil: "RP Lab / DC Lab, CSIR-IGIB" },
+          { time: "5:35 – 5:45", slot: "Panel discussion", speaker: "Speakers of the session with the Chair", type: "panel" },
+          { time: "5:45 PM", slot: "CONCLUSION OF DAY 1", type: "break" }
         ]
       }
     ]
@@ -137,4 +126,4 @@ window.SCHEDULE = [
       { kind: "row", time: "12:30", title: "Departure for the airport" }
     ]
   }
-]; 
+];
