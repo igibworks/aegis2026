@@ -46,12 +46,8 @@ window.SCHEDULE = [
             talkTitle:"TBA" },
           { time: "10:50 – 11:15", slot: "Faculty Talk 3", speaker: "Dr. Bhupesh Taneja", affil: "CSIR-IGIB, New Delhi", 
             talkTitle:"TBA" },
-          { time: "11:15 – 11:25", slot: "Student Talk 1", speaker: "Student speaker (TBC)", affil: "JN Lab",
-            talkTitle:"TBA"
-          },
-          { time: "11:25 – 11:35", slot: "Student Talk 2", speaker: "Student speaker (TBC)", affil: "BT Lab", 
-            talkTitle:"TBA"
-           },
+          { time: "11:15 – 11:25", slot: "Student Talk 1", speaker: "Student speaker (TBC)", affil: "JN Lab"},
+          { time: "11:25 – 11:35", slot: "Student Talk 2", speaker: "Student speaker (TBC)", affil: "BT Lab"},
           { time: "11:35 – 11:40", slot: "Panel discussion", speaker: "Speakers of the session with the Chair", type: "panel" },
           { time: "11:40 – 12:00", slot: "TEA BREAK", type: "break" }
         ]
@@ -63,20 +59,16 @@ window.SCHEDULE = [
         chair: "Prof. Cínthia Pereira Machado Tabchoury (University of Campinas, Brazil) and Dr. Bhupesh Taneja",
         rows: [
           { time: "12:00 – 12:25", slot: "Faculty Talk 4", speaker: "Dr. Sharmila Mande", affil: "Ayush Distinguished Scientist Chair, Ministry of Ayush",
-            talkTitle:"TBA"
+            talkTitle:"Nasopharyngeal and Gut microbiome in neonates"
            },
           { time: "12:00 – 12:25", slot: "Faculty Talk 5", speaker: "Prof. Fernanda Cristina Petersen", affil: "University of Oslo, Norway",
-            talkTitle:"TBA"
+            talkTitle:"Beyond the gut: Insights from the nasopharyngeal microbiome"
            },
           { time: "11:55 – 12:20", slot: "Faculty Talk 6", speaker: "Prof. Antonio Pedro Ricomini Filho", affil: "University of Campinas, Brazil",
-            talkTitle:"TBA"
-           },
-          { time: "12:20 – 12:30", slot: "Student Talk 3", speaker: "Student speaker (TBC)", affil: "VR Lab",
-            talkTitle:"TBA"
-           },
-          { time: "12:30 – 12:40", slot: "Student Talk 4", speaker: "Student speaker (TBC)", affil: "KC Lab",
-            talkTitle:"TBA"
-           },
+            talkTitle:"Beyond Killing Bacteria: Targeting Biofilm Architecture for Disease Control"
+          },
+          { time: "12:20 – 12:30", slot: "Student Talk 3", speaker: "Student speaker (TBC)", affil: "VR Lab"},
+          { time: "12:30 – 12:40", slot: "Student Talk 4", speaker: "Student speaker (TBC)", affil: "KC Lab"},
           { time: "12:40 – 1:00", slot: "Panel discussion", speaker: "Speakers of the session with the Chair", type: "panel" },
           { time: "1:00 – 2:00", slot: "LUNCH", type: "break" }
         ]
@@ -90,18 +82,12 @@ window.SCHEDULE = [
           { time: "2:00 – 2:25", slot: "Faculty Talk 5", speaker: "Dr. Jitendra Narayan", affil: "CSIR-IGIB, New Delhi",
             talkTitle:"TBA"
            },
-          { time: "2:25 – 2:50", slot: "Faculty Talk 6", speaker: "Dr. Bhupesh Taneja", affil: "CSIR-IGIB, New Delhi",
+          { time: "2:25 – 2:50", slot: "Faculty Talk 6", speaker: "Dr. Kumardeep Choudhary", affil: "CSIR-IGIB, New Delhi",
             talkTitle:"TBA"
            },
-          { time: "2:50 – 3:00", slot: "Student Talk 5", speaker: "Student speaker (TBC)", affil: "JN Lab",
-            talkTitle:"TBA"
-           },
-          { time: "3:00 – 3:10", slot: "Student Talk 6", speaker: "Student speaker (TBC)", affil: "BT Lab",
-            talkTitle:"TBA"
-          },
-          { time: "3:10 – 3:20", slot: "Student Talk 7", speaker: "Student speaker (TBC)", affil: "RS Lab",
-            talkTitle:"TBA"
-           },
+          { time: "2:50 – 3:00", slot: "Student Talk 5", speaker: "Student speaker (TBC)", affil: "JN Lab"},
+          { time: "3:00 – 3:10", slot: "Student Talk 6", speaker: "Student speaker (TBC)", affil: "BT Lab"},
+          { time: "3:10 – 3:20", slot: "Student Talk 7", speaker: "Student speaker (TBC)", affil: "RS Lab"},
           { time: "3:20 – 3:30", slot: "Panel discussion", speaker: "Speakers of the session with the Chair", type: "panel" },
           { time: "3:30 – 4:00", slot: "TEA BREAK", type: "break" }
         ]
@@ -116,17 +102,11 @@ window.SCHEDULE = [
             talkTitle:"TBA"
            },
           { time: "4:25 – 4:50", slot: "Faculty Talk 8", speaker: "Prof. Belinda Nicolau", affil: "McGill University, Canada",
-            talkTitle:"TBA"
+            talkTitle:"Reading Between the Clocks: Intra-individual Variability in Epigenetic Age Estimates"
            },
-          { time: "4:50 – 5:00", slot: "Student Talk 8", speaker: "Student speaker (TBC)", affil: "RP Lab",
-            talkTitle:"TBA"
-           },
-          { time: "5:00 – 5:10", slot: "Student Talk 9", speaker: "Student speaker (TBC)", affil: "RP Lab / DC Lab",
-            talkTitle:"TBA"
-           },
-          { time: "5:10 – 5:20", slot: "Student Talk 10", speaker: "Amal (TBC)",
-            talkTitle:"TBA"
-           },
+          { time: "4:50 – 5:00", slot: "Student Talk 8", speaker: "Student speaker (TBC)", affil: "RP Lab"},
+          { time: "5:00 – 5:10", slot: "Student Talk 9", speaker: "Student speaker (TBC)", affil: "RP Lab / DC Lab"},
+          { time: "5:10 – 5:20", slot: "Student Talk 10", speaker: "Amal (TBC)"},
           { time: "5:20 – 5:30", slot: "Panel discussion", speaker: "Speakers of the session with the Chair", type: "panel" },
           { time: "5:30 PM", slot: "CONCLUSION OF DAY 1", type: "break" }
         ]
