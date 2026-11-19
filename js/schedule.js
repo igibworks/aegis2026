@@ -40,12 +40,20 @@ window.SCHEDULE = [
         focus: "How resistance emerges, evolves and moves between human, animal and environmental reservoirs, studied through comparative genomics, evolutionary biology, surveillance and resistome analysis.",
         chair: "Dr. Sharmila Mande and Dr. Achal Dhariwal (University of Oslo)",
         rows: [
-          { time: "9:45 – 10:10", slot: "Faculty Talk 1", speaker: "Prof. Ulf Reidar Dahle", affil: "Norwegian Institute of Public Health, Norway", talkTitle:"From Policy to Bench: Bridging Global AMR Frameworks with Clinical Reality and Microbiome Research" },
-          { time: "10:10 – 10:35", slot: "Faculty Talk 2", speaker: "Prof. Mohammed Al-Haroni", affil: "University of Oslo, Norway" },
-          { time: "10:35 – 10:45", slot: "Student Talk 1", speaker: "Student speaker (TBC)", affil: "JN Lab" },
-          { time: "10:45 – 10:55", slot: "Student Talk 2", speaker: "Student speaker (TBC)", affil: "BT Lab" },
-          { time: "10:55 – 11:00", slot: "Panel discussion", speaker: "Speakers of the session with the Chair", type: "panel" },
-          { time: "11:00 – 11:30", slot: "TEA BREAK", type: "break" }
+          { time: "10:00 – 10:25", slot: "Faculty Talk 1", speaker: "Prof. Ulf Reidar Dahle", affil: "Norwegian Institute of Public Health, Norway", 
+            talkTitle:"From Policy to Bench: Bridging Global AMR Frameworks with Clinical Reality and Microbiome Research" },
+          { time: "10:25 – 10:50", slot: "Faculty Talk 2", speaker: "Prof. Mohammed Al-Haroni", affil: "University of Oslo, Norway", 
+            talkTitle:"TBA" },
+          { time: "10:50 – 11:15", slot: "Faculty Talk 3", speaker: "Dr. Bhupesh Taneja", affil: "CSIR-IGIB, New Delhi", 
+            talkTitle:"TBA" },
+          { time: "11:15 – 11:25", slot: "Student Talk 1", speaker: "Student speaker (TBC)", affil: "JN Lab",
+            talkTitle:"TBA"
+          },
+          { time: "11:25 – 11:35", slot: "Student Talk 2", speaker: "Student speaker (TBC)", affil: "BT Lab", 
+            talkTitle:"TBA"
+           },
+          { time: "11:35 – 11:40", slot: "Panel discussion", speaker: "Speakers of the session with the Chair", type: "panel" },
+          { time: "11:40 – 12:00", slot: "TEA BREAK", type: "break" }
         ]
       },
       {
@@ -54,10 +62,21 @@ window.SCHEDULE = [
         focus: "How bacteria and fungi communicate, exchange genes and build biofilms, and how these community behaviours drive tolerance, persistence and resistance.",
         chair: "Prof. Cínthia Pereira Machado Tabchoury (University of Campinas, Brazil) and Dr. Bhupesh Taneja",
         rows: [
-          { time: "11:30 – 11:55", slot: "Faculty Talk 3", speaker: "Prof. Fernanda Cristina Petersen", affil: "University of Oslo, Norway" },
-          { time: "11:55 – 12:20", slot: "Faculty Talk 4", speaker: "Prof. Antonio Pedro Ricomini Filho", affil: "University of Campinas, Brazil" },
-          { time: "12:20 – 12:30", slot: "Student Talk 3", speaker: "Student speaker (TBC)", affil: "VR Lab" },
-          { time: "12:30 – 12:40", slot: "Student Talk 4", speaker: "Student speaker (TBC)", affil: "KC Lab" },
+          { time: "12:00 – 12:25", slot: "Faculty Talk 4", speaker: "Dr. Sharmila Mande", affil: "Ayush Distinguished Scientist Chair, Ministry of Ayush",
+            talkTitle:"TBA"
+           },
+          { time: "12:00 – 12:25", slot: "Faculty Talk 5", speaker: "Prof. Fernanda Cristina Petersen", affil: "University of Oslo, Norway",
+            talkTitle:"TBA"
+           },
+          { time: "11:55 – 12:20", slot: "Faculty Talk 6", speaker: "Prof. Antonio Pedro Ricomini Filho", affil: "University of Campinas, Brazil",
+            talkTitle:"TBA"
+           },
+          { time: "12:20 – 12:30", slot: "Student Talk 3", speaker: "Student speaker (TBC)", affil: "VR Lab",
+            talkTitle:"TBA"
+           },
+          { time: "12:30 – 12:40", slot: "Student Talk 4", speaker: "Student speaker (TBC)", affil: "KC Lab",
+            talkTitle:"TBA"
+           },
           { time: "12:40 – 1:00", slot: "Panel discussion", speaker: "Speakers of the session with the Chair", type: "panel" },
           { time: "1:00 – 2:00", slot: "LUNCH", type: "break" }
         ]
@@ -68,11 +87,21 @@ window.SCHEDULE = [
         focus: "Turning sequence and structural data into biological insight: AI and machine-learning models to predict resistance, comparative and evolutionary genomics, genome informatics and the molecular architecture of resistance.",
         chair: "Prof. Sharmila Mande (TCS; Visiting Professor, IISER Thiruvananthapuram) and Dr. Rajesh Pandey",
         rows: [
-          { time: "2:00 – 2:25", slot: "Faculty Talk 5", speaker: "Dr. Jitendra Narayan", affil: "CSIR-IGIB, New Delhi" },
-          { time: "2:25 – 2:50", slot: "Faculty Talk 6", speaker: "Dr. Bhupesh Taneja", affil: "CSIR-IGIB, New Delhi" },
-          { time: "2:50 – 3:00", slot: "Student Talk 5", speaker: "Student speaker (TBC)", affil: "JN Lab" },
-          { time: "3:00 – 3:10", slot: "Student Talk 6", speaker: "Student speaker (TBC)", affil: "BT Lab" },
-          { time: "3:10 – 3:20", slot: "Student Talk 7", speaker: "Student speaker (TBC)", affil: "RS Lab" },
+          { time: "2:00 – 2:25", slot: "Faculty Talk 5", speaker: "Dr. Jitendra Narayan", affil: "CSIR-IGIB, New Delhi",
+            talkTitle:"TBA"
+           },
+          { time: "2:25 – 2:50", slot: "Faculty Talk 6", speaker: "Dr. Bhupesh Taneja", affil: "CSIR-IGIB, New Delhi",
+            talkTitle:"TBA"
+           },
+          { time: "2:50 – 3:00", slot: "Student Talk 5", speaker: "Student speaker (TBC)", affil: "JN Lab",
+            talkTitle:"TBA"
+           },
+          { time: "3:00 – 3:10", slot: "Student Talk 6", speaker: "Student speaker (TBC)", affil: "BT Lab",
+            talkTitle:"TBA"
+          },
+          { time: "3:10 – 3:20", slot: "Student Talk 7", speaker: "Student speaker (TBC)", affil: "RS Lab",
+            talkTitle:"TBA"
+           },
           { time: "3:20 – 3:30", slot: "Panel discussion", speaker: "Speakers of the session with the Chair", type: "panel" },
           { time: "3:30 – 4:00", slot: "TEA BREAK", type: "break" }
         ]
@@ -83,11 +112,21 @@ window.SCHEDULE = [
         focus: "Integrating host and microbial genomics and transcriptomics to understand infection outcomes, pathogen-driven disease across the life course, and approaches beyond conventional antibiotics.",
         chair: "Dr. Jitendra Narayan and Dr. Achal Dhariwal (University of Oslo)",
         rows: [
-          { time: "4:00 – 4:25", slot: "Faculty Talk 7", speaker: "Dr. Rajesh Pandey", affil: "CSIR-IGIB, New Delhi" },
-          { time: "4:25 – 4:50", slot: "Faculty Talk 8", speaker: "Prof. Belinda Nicolau", affil: "McGill University, Canada" },
-          { time: "4:50 – 5:00", slot: "Student Talk 8", speaker: "Student speaker (TBC)", affil: "RP Lab" },
-          { time: "5:00 – 5:10", slot: "Student Talk 9", speaker: "Student speaker (TBC)", affil: "RP Lab / DC Lab" },
-          { time: "5:10 – 5:20", slot: "Student Talk 10", speaker: "Amal (TBC)" },
+          { time: "4:00 – 4:25", slot: "Faculty Talk 7", speaker: "Dr. Rajesh Pandey", affil: "CSIR-IGIB, New Delhi",
+            talkTitle:"TBA"
+           },
+          { time: "4:25 – 4:50", slot: "Faculty Talk 8", speaker: "Prof. Belinda Nicolau", affil: "McGill University, Canada",
+            talkTitle:"TBA"
+           },
+          { time: "4:50 – 5:00", slot: "Student Talk 8", speaker: "Student speaker (TBC)", affil: "RP Lab",
+            talkTitle:"TBA"
+           },
+          { time: "5:00 – 5:10", slot: "Student Talk 9", speaker: "Student speaker (TBC)", affil: "RP Lab / DC Lab",
+            talkTitle:"TBA"
+           },
+          { time: "5:10 – 5:20", slot: "Student Talk 10", speaker: "Amal (TBC)",
+            talkTitle:"TBA"
+           },
           { time: "5:20 – 5:30", slot: "Panel discussion", speaker: "Speakers of the session with the Chair", type: "panel" },
           { time: "5:30 PM", slot: "CONCLUSION OF DAY 1", type: "break" }
         ]
