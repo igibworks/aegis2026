@@ -89,4 +89,4 @@
   const btn = document.querySelector('.menu-btn'), nav = document.querySelector('.nav nav');
   btn.addEventListener('click', () => { const o = nav.classList.toggle('open'); btn.setAttribute('aria-expanded', o); });
   nav.addEventListener('click', e => { if (e.target.tagName === 'A') nav.classList.remove('open'); });
-})();
+})(); 
