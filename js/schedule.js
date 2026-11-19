@@ -1,5 +1,5 @@
 // EDIT THIS FILE to update the programme. The website builds the schedule from it.
-// Source: "Resisforce Satellite Meeting Programme" (official, updated).
+// Source: "AEGIS 2026 Meeting Programme" (official).
 //
 // Each day has "items". An item is either:
 //   { kind: "row", time, title, desc?, type?: "break" }                      -> a simple timed row
@@ -13,13 +13,13 @@ window.MEETING = {
 
 window.OVERVIEW = [
   { n: 1, theme: "One Health and AMR: Tracking Resistance across Hosts, Microbiomes and Environments",
-    speakers: "U. R. Dahle, M. Al-Haroni, B. Taneja", chair: "Dr. Sharmila Mande, Dr. Achal Dhariwal" },
+    speakers: "U. R. Dahle, M. Al-Haroni, B. Taneja", chair: "Dr. Sharmila Mande, Prof. Fernanda Cristina Petersen" },
   { n: 2, theme: "Microbial Communities in Action: Signalling, Biofilms and the Emergence of Resistance",
-    speakers: "S. Mande, F. C. Petersen, A. P. Ricomini Filho", chair: "Prof. Ulf Reidar Dahle, Prof. Belinda Nicolau" },
+    speakers: "S. Mande, F. C. Petersen, A. Dhariwal", chair: "Prof. Ulf Reidar Dahle, Prof. Belinda Nicolau" },
   { n: 3, theme: "Decoding Data in AMR: AI, Bioinformatics and Computational Genomics",
     speakers: "J. Narayan, K. Choudhary", chair: "Dr. Bhupesh Taneja, Dr. Sherry Bhalla" },
   { n: 4, theme: "Omics for Wellness: Host–Pathogen Interplay and Pathogen-Driven Disease",
-    speakers: "R. Pandey, B. Nicolau", chair: "Prof. Cínthia Tabchoury" }
+    speakers: "R. Pandey, B. Nicolau", chair: "Prof. Cínthia Tabchoury, Prof. Antonio Pedro Ricomini Filho" }
 ];
 
 window.SCHEDULE = [
@@ -39,7 +39,7 @@ window.SCHEDULE = [
         kind: "session", label: "Session 1", time: "10:05 – 11:45 AM",
         title: "One Health and AMR: Tracking Resistance across Hosts, Microbiomes and Environments",
         focus: "How resistance emerges, evolves and moves between human, animal and environmental reservoirs, studied through comparative genomics, evolutionary biology, surveillance and resistome analysis.",
-        chair: "Dr. Sharmila Mande and Dr. Achal Dhariwal (University of Oslo)",
+        chair: "Dr. Sharmila Mande and Prof. Fernanda Cristina Petersen (University of Oslo, Norway)",
         rows: [
           { time: "10:05 – 10:30", slot: "Faculty Talk 1", speaker: "Prof. Ulf Reidar Dahle", affil: "Norwegian Institute of Public Health, Norway",
             talkTitle: "From Policy to Bench: Bridging Global AMR Frameworks with Clinical Reality and Microbiome Research" },
@@ -48,7 +48,7 @@ window.SCHEDULE = [
           { time: "10:55 – 11:20", slot: "Faculty Talk 3", speaker: "Dr. Bhupesh Taneja", affil: "CSIR-IGIB, New Delhi" },
           { time: "11:20 – 11:30", slot: "Student Talk 1", speaker: "Student speaker (TBC)", affil: "JN Lab, CSIR-IGIB" },
           { time: "11:30 – 11:40", slot: "Student Talk 2", speaker: "Student speaker (TBC)", affil: "BT Lab, CSIR-IGIB" },
-          { time: "11:40 – 11:45", slot: "Panel discussion", speaker: "Speakers of the session with the Chair", type: "panel" },
+          { time: "11:40 – 11:45", slot: "Session closure", speaker: "Session chairs", type: "panel" },
           { time: "11:45 – 12:00", slot: "TEA BREAK", type: "break" }
         ]
       },
@@ -62,10 +62,10 @@ window.SCHEDULE = [
             talkTitle: "Nasopharyngeal and Gut microbiome in neonates" },
           { time: "12:25 – 12:50", slot: "Faculty Talk 5", speaker: "Prof. Fernanda Cristina Petersen", affil: "University of Oslo, Norway",
             talkTitle: "Beyond the gut: Insights from the nasopharyngeal microbiome" },
-          { time: "12:50 – 1:15", slot: "Faculty Talk 6", speaker: "Prof. Antonio Pedro Ricomini Filho", affil: "University of Campinas, Brazil",
-            talkTitle: "Beyond Killing Bacteria: Targeting Biofilm Architecture for Disease Control" },
+          { time: "12:50 – 1:15", slot: "Faculty Talk 6", speaker: "Dr. Achal Dhariwal", affil: "University of Oslo, Norway",
+            talkTitle: "An Integrated Characterization of the Nasopharyngeal Resistome in Indian Preterm Infants: A Preliminary Comparison with Norway" },
           { time: "1:15 – 1:25", slot: "Student Talk 3", speaker: "Saraswati Awasthi", affil: "RS Lab, CSIR-IGIB" },
-          { time: "1:25 – 1:30", slot: "Panel discussion", speaker: "Speakers of the session with the Chair", type: "panel" },
+          { time: "1:25 – 1:30", slot: "Session closure", speaker: "Session chairs", type: "panel" },
           { time: "1:30 – 2:30", slot: "LUNCH", type: "break" }
         ]
       },
@@ -80,24 +80,25 @@ window.SCHEDULE = [
           { time: "3:20 – 3:30", slot: "Student Talk 4", speaker: "Student speaker (TBC)", affil: "JN Lab, CSIR-IGIB" },
           { time: "3:30 – 3:40", slot: "Student Talk 5", speaker: "Student speaker (TBC)", affil: "BT Lab, CSIR-IGIB" },
           { time: "3:40 – 3:50", slot: "Student Talk 6", speaker: "Sneha Thomas", affil: "Ajay Pratap Lab, CSIR-IGIB" },
-          { time: "3:50 – 4:00", slot: "Panel discussion", speaker: "Speakers of the session with the Chair", type: "panel" },
+          { time: "3:50 – 4:00", slot: "Session closure", speaker: "Session chairs", type: "panel" },
           { time: "4:00 – 4:15", slot: "TEA BREAK", type: "break" }
         ]
       },
       {
-        kind: "session", label: "Session 4", time: "4:15 – 5:45 PM",
+        kind: "session", label: "Session 4", time: "4:15 – 6:00 PM",
         title: "Omics for Wellness: Host–Pathogen Interplay and Pathogen-Driven Disease",
         focus: "Integrating host and microbial genomics and transcriptomics to understand infection outcomes, pathogen-driven disease across the life course, and approaches beyond conventional antibiotics.",
-        chair: "Prof. Cínthia Pereira Machado Tabchoury (University of Campinas, Brazil)",
+        chair: "Prof. Cínthia Pereira Machado Tabchoury and Prof. Antonio Pedro Ricomini Filho (University of Campinas, Brazil)",
         rows: [
           { time: "4:15 – 4:40", slot: "Faculty Talk 9", speaker: "Dr. Rajesh Pandey", affil: "CSIR-IGIB, New Delhi" },
           { time: "4:40 – 5:05", slot: "Faculty Talk 10", speaker: "Prof. Belinda Nicolau", affil: "McGill University, Canada",
             talkTitle: "Reading Between the Clocks: Intra-individual Variability in Epigenetic Age Estimates" },
           { time: "5:05 – 5:15", slot: "Student Talk 7", speaker: "Harsimran Singh Kapoor (PhD Trainee)", affil: "Faculty of Dental Medicine & Oral Health Sciences, McGill University, Canada" },
           { time: "5:15 – 5:25", slot: "Student Talk 8", speaker: "Student speaker (TBC)", affil: "RP Lab, CSIR-IGIB" },
-          { time: "5:25 – 5:35", slot: "Student Talk 9", speaker: "Student speaker (TBC)", affil: "RP Lab / DC Lab, CSIR-IGIB" },
-          { time: "5:35 – 5:45", slot: "Panel discussion", speaker: "Speakers of the session with the Chair", type: "panel" },
-          { time: "5:45 PM", slot: "CONCLUSION OF DAY 1", type: "break" }
+          { time: "5:25 – 5:35", slot: "Student Talk 9", speaker: "Student speaker (TBC)", affil: "RP Lab, CSIR-IGIB" },
+          { time: "5:35 – 5:45", slot: "Student Talk 10", speaker: "Vishal Bharti", affil: "DC Lab, CSIR-IGIB" },
+          { time: "5:45 – 6:00", slot: "Session closure", speaker: "Session chairs", type: "panel" },
+          { time: "6:00 PM", slot: "CONCLUSION OF DAY 1", type: "break" }
         ]
       }
     ]
@@ -106,24 +107,28 @@ window.SCHEDULE = [
     day: "Day 2", date: "Wed, 25 Nov 2026", title: "Brainstorming and Networking",
     subtitle: "Theme: Building an Integrative Omics Framework for One Health, AMR and Wellness",
     items: [
-      { kind: "row", time: "9:30 – 9:45", title: "Recap of key questions emerging from Day 1" },
-      { kind: "row", time: "9:45 – 10:30", title: "Breakout Session 1", desc: "One Health and microbial communities: reservoirs, transmission and persistence (Sessions 1 & 2)" },
-      { kind: "row", time: "10:30 – 11:15", title: "Breakout Session 2", desc: "AI, decoding AMR data and host omics: shared pipelines, prediction models, datasets and integration (Sessions 3 & 4)" },
-      { kind: "row", time: "11:15 – 11:30", title: "Tea break", type: "break" },
-      { kind: "row", time: "11:30 – 12:30", title: "Joint discussion", desc: "Shared datasets, complementary expertise and possible joint projects / student exchanges" },
-      { kind: "row", time: "12:30 – 1:00", title: "Summary of action points" },
-      { kind: "row", time: "1:00 – 2:00", title: "Lunch", type: "break" },
-      { kind: "row", time: "2:00 onwards", title: "Delhi tour and informal networking" }
+      { kind: "row", time: "9:30 – 9:35", title: "Summary of Day 1" },
+      { kind: "row", time: "9:35 – 10:00", title: "Talk: Beyond Killing Bacteria: Targeting Biofilm Architecture for Disease Control",
+        desc: "Prof. Antonio Pedro Ricomini Filho · Piracicaba Dental School, University of Campinas, Brazil" },
+      { kind: "row", time: "10:00 – 10:30", title: "★ Fireside Chat: Science Without Borders: Exchange, Collaboration and the Road Ahead",
+        desc: "Pernille on university collaboration and science exchange programmes, with Prof. Ulf Reidar Dahle, Prof. Fernanda Cristina Petersen and Prof. Sharmila Mande reflecting on the key takeaways of the meeting. Moderator: Dr. Rajesh Pandey" },
+      { kind: "row", time: "10:30 – 11:00", title: "★ Closing remarks and vote of thanks" },
+      { kind: "row", time: "11:00 – 11:15", title: "Tea break", type: "break" },
+      { kind: "row", time: "11:15 – 12:00", title: "Breakout Session 1", desc: "Internal Faculty Exchange · One Health and microbial communities: reservoirs, transmission and persistence (Sessions 1 & 2)" },
+      { kind: "row", time: "12:00 – 12:45", title: "Breakout Session 2", desc: "Internal Faculty Exchange · AI, decoding AMR data and host omics: shared pipelines, prediction models, datasets and integration (Sessions 3 & 4)" },
+      { kind: "row", time: "12:45 – 1:15", title: "Joint discussion", desc: "Internal Faculty Exchange · Shared datasets, complementary expertise and possible joint projects / student exchanges" },
+      { kind: "row", time: "1:15 – 1:30", title: "Summary of action points", desc: "Internal Faculty Exchange" },
+      { kind: "row", time: "1:30 – 2:30", title: "Lunch", type: "break" },
+      { kind: "row", time: "2:30 onwards", title: "Delhi tour and informal networking", desc: "Internal Faculty Exchange" }
     ]
   },
   {
     day: "Day 3", date: "Thu, 26 Nov 2026", title: "Closing Session and Future Plans",
     items: [
-      { kind: "row", time: "9:30 – 10:15", title: "Summary of Days 1 and 2 by the session chairs" },
-      { kind: "row", time: "10:15 – 11:00", title: "Future plans", desc: "Collaborative research, training and follow-up activities" },
+      { kind: "row", time: "9:30 – 10:15", title: "Summary of Days 1 and 2 by the session chairs", desc: "Internal Faculty Exchange" },
+      { kind: "row", time: "10:15 – 11:00", title: "Future plans", desc: "Internal Faculty Exchange · Collaborative research, training and follow-up activities" },
       { kind: "row", time: "11:00 – 11:15", title: "Tea break", type: "break" },
-      { kind: "row", time: "11:15 – 11:45", title: "Closing remarks and vote of thanks" },
-      { kind: "row", time: "12:30", title: "Departure for the airport" }
+      { kind: "row", time: "11:15 – 11:45", title: "★ Closing remarks and vote of thanks", desc: "Internal Faculty Exchange" }
     ]
   }
 ];
