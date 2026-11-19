@@ -137,4 +137,4 @@ window.SCHEDULE = [
       { kind: "row", time: "12:30", title: "Departure for the airport" }
     ]
   }
-];
+]; 
