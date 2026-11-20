@@ -34,7 +34,7 @@ window.SCHEDULE = [
         rows: [
           { time: "9:30 – 9:40", slot: "Welcome remarks", speaker: "Director, CSIR-IGIB" },
           { time: "9:40 – 9:50", slot: "Opening address", speaker: "Prof. Sharmila Mande" },
-          { time: "9:50 – 9:55", slot: "Introduction to the programme", speaker: "Dr. Rajesh Pandey (Coordinator)" }
+          { time: "9:50 – 9:55", slot: "Introduction to the programme", speaker: "Dr. Rajesh Pandey" }
         ]
       },
       {
